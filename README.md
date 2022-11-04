@@ -3,7 +3,7 @@ Each folder has the follow-along code as of that week.
 
 # Notes
 
-## Lesson 1 The Vue Instance Notes (11/4/22)
+## Lesson 1 The Vue Instance (11/4/22)
 - for local dev using vue cdn, use vue chrome extension -> manage extensions -> Allow Access To File Urls
 - cdn: `<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>`
 - `var app = new Vue()` is how it starts - an instance of the Vue object
@@ -21,7 +21,7 @@ Each folder has the follow-along code as of that week.
 - you can change vue data live in the console:
   - a data's `product` property can be accessed like `app.product = xyz`
 
-## Lesson 2 Attribute Binding Notes (11/4/22)
+## Lesson 2 Attribute Binding (11/4/22)
 - `v-bind` binds data/expression to an attribute
   - ie, `v-bind:src="image"`
   - shorthand is just `:`, ie `:src="image"`
