@@ -1,5 +1,5 @@
 My weekly notes and progress on the vuemastery.com Intro To Vue 2 course (https://www.vuemastery.com/courses/intro-to-vue-js)
-Each folder has the follow-along code as of that week.
+Each folder has the follow-along code as of that week as well as that lesson's challenge.
 
 # Notes
 
