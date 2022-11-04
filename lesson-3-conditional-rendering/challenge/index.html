@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product App - Lesson 2</title>
+  <title>Product App - Lesson 3 Challenge</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -16,7 +16,9 @@
       </div>
 
       <div class="product-info">
-        <h1>{{ product }}</h1>
+        <h1>{{ product }} <span v-if="onSale">(On Sale)</span></h1>
+        <p v-if="inStock">In Stock</p>
+        <p v-else>Out of Stock</p>
       </div>
 
     </div>

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Product App - Lesson 4</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -15,20 +12,21 @@
     <div class="product">
 
       <div class="product-image">
-        <img :src="image">
+        <img :src="image" >
       </div>
 
       <div class="product-info">
         <h1>{{ product }}</h1>
-        <p v-show="inStock">In Stock</p>
-      </div>
+        <p v-if="inStock">In Stock</p>
+        <p v-else>Out of Stock</p>
 
-      <ul>
-        <li v-for="detail in details">{{ detail }}</li>
-      </ul>
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
 
-      <div v-for="variant in variants">
-        <p>{{ variant.variantColor }}</p>
+        <div v-for="variant in variants" :key="variant.variantId">
+          <p>{{ variant.variantColor }}</p>
+        </div>
       </div>
 
     </div>

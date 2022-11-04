@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product App - Lesson 2</title>
+  <title>Product App - Lesson 4 Challenge</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -17,6 +17,20 @@
 
       <div class="product-info">
         <h1>{{ product }}</h1>
+        <p v-if="inStock">In Stock</p>
+        <p v-else>Out of Stock</p>
+
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+
+        <div v-for="variant in variants" :key="variant.variantId">
+          <p>{{ variant.variantColor }}</p>
+        </div>
+
+        <ul>
+          <li v-for="(size, index) in sizes" :key="index">{{ size }}</li>
+        </ul>
       </div>
 
     </div>
