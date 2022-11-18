@@ -77,3 +77,14 @@ Each folder has the follow-along code as of that week as well as that lesson's c
 ## Lesson 8 Components
 - syntax is ``Vue.component('name', { props: [], template: ``, data() { return { }}})``
 - variables in props can be referenced in template
+
+## Lesson 9 Communicating Events
+- Values pass down with props and up with emit
+- `this.$emit('event-name', <optional var to pass up>)` emits upward
+- to catch the emission, it's component needs `@event-name="methodInParent"`
+- it's fine to pass emissions all the way to the top Vue instance
+- the emission catching attribute doesn't need () to pass vars (just the actual method declaration needs ())
+
+## Lesson 10 Fors & v-model
+- v-bind only binds from data to template
+- v-model binds both from data to template and also from template to data (2 way data binding)
